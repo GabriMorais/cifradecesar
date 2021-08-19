@@ -2,9 +2,6 @@
     var remain = n % m;
     return Math.floor(remain >= 0 ? remain : remain + m);
 };
-function mod(n, m) {
-    return ((n % m) + m) % m;
-  }
 function CifraDeCesar(texto,chave,opcao) {
     var alfabeto = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
     var atual = '',encriptado='';
@@ -39,7 +36,7 @@ function CifraDeCesar(texto,chave,opcao) {
     
 return encriptado
 }
-textoOriginal= 'ab';
+textoOriginal= 'testando algoritmo';
 encriptar = true
 decriptar = false
 console.log("Encriptando...")
